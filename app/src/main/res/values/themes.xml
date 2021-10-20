@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PA_USPTU" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimarySurface">@color/dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimarySurface</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/screen_splash</item>
+    </style>
+    <style name="Button_Auth" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_auth_color</item>
+        <item name="android:colorButtonNormal">#E6E9EF</item>
+        <item name="android:colorControlHighlight">#E6E9EF</item>
+    </style>
+    <style name="Button_Gos" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_gos_color</item>
+        <item name="android:colorButtonNormal">#E6E9EF</item>
+        <item name="android:colorControlHighlight">#E6E9EF</item>
+    </style>
+</resources>

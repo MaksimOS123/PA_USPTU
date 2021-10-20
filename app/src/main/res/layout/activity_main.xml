@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Main_Color"
+    tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:id="@+id/CONT"
+            android:layout_above="@+id/madeby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    app:srcCompat="@drawable/logo_usptu"
+                    android:layout_marginTop="30dp">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Logo_Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:text="УФИМСКИЙ ГОСУДАРСТВЕННЫЙ НЕФТЯНОЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:textColor="#292D32"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/source_sans_pro_bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/Logo_Desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-30dp"
+                        android:text="ОПОРНЫЙ ВУЗ РОССИЙСКОЙ ФЕДЕРАЦИИ"
+                        android:autoSizeMinTextSize="5dp"
+                        android:autoSizeMaxTextSize="10dp"
+                        android:textColor="#292D32"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        ></TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_auth"
+            android:inputType="text"
+            android:layout_marginTop="80dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:hint="Логин, телефон или электронная почта"
+            android:textColorHint="#BABABA"
+            android:elevation="3dp"
+            android:translationZ="3dp"
+            android:textAlignment="center"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_auth"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textAlignment="center"
+            android:hint="Пароль"
+            android:translationZ="3dp"
+            android:elevation="3dp"
+            android:textColorHint="#BABABA"
+            android:textCursorDrawable="@drawable/cursor"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Войти"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:background="@drawable/button_auth_color"
+            android:textSize="20dp"
+            android:onClick="Login"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:layout_gravity="center"
+            android:stateListAnimator="@animator/button_elevation"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/gos_in"
+            android:translationZ="10dp"
+            android:elevation="100dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textAlignment="center"
+            android:background="@drawable/button_gos_color"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:stateListAnimator="@animator/button_elevation"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/madeby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/rakkas_regular"
+        android:text="Made by @maksl_64b and Kuptsov Denis"
+        android:textColor="#A6A6A6"
+        android:textSize="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_margin_scroll">10dp</dimen>
+    <dimen name="top_margin_scroll">0dp</dimen>
+    <dimen name="bottom_margin_scroll">10dp</dimen>
+    <dimen name="right_margin_scroll">10dp</dimen>
+    <dimen name="size_scroll">120dp</dimen>
+    <dimen name="left_margin_date">10dp</dimen>
+    <dimen name="top_margin_date">5dp</dimen>
+    <dimen name="left_margin_title">10dp</dimen>
+    <dimen name="top_margin_title">10dp</dimen>
+    <dimen name="bottom_margin_title">10dp</dimen>
+    <dimen name="size_title">15dp</dimen>
+    <dimen name="top_margin_card">20dp</dimen>
+</resources>
